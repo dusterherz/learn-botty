@@ -8,7 +8,7 @@ My mother used recast.ai and the microsoft Bot Framework to construct me. All st
 
 ## What can I do
 
-For the moment, I can say Hello and ask what you want in French (My mother is French :) ), but I can't help her. She is working on it and she have a lot of idea !
+For the moment, I can say Hello and ask what you want in French (My mother is French :) ), but I can't help her. She is working on it and she has a lot of idea !
 
 ## What I will do (maybe, one day ...)
 
@@ -20,7 +20,7 @@ For the moment, I can say Hello and ask what you want in French (My mother is Fr
 
 ### Traffic
 
-* Give you the current traffic for your working travel.
+* Give you the current traffic for your working travel
 * Give you the traffic for another address
 
 ### Outfit
@@ -36,9 +36,9 @@ For the moment, I can say Hello and ask what you want in French (My mother is Fr
 ### Lifestyle
 
 * Can remember to make you drink water
-* Can remember your contaceptive. (My mother doesn't want another baby than me and her cat !)
+* Can remember your contaceptive (My mother doesn't want another baby than me and her cat !)
 
 ### Budget
 
 * Can make a budget for something like videogames (My mother loves videogames !)
-* Can scan a ticket and add something to this budjet
+* Can scan a ticket and add something to this budget
