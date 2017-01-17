@@ -1,6 +1,7 @@
 # Medusia, my personal bot
 
 Hello I am medusia ! I'm the personal bot of dusterherz who help her everyday. Welcome in my code !
+![Image of Medusia](https://raw.githubusercontent.com/dusterherz/medusia/master/logo.png)
 
 ## What I'm made of
 
@@ -42,3 +43,7 @@ For the moment, I can say Hello and ask what you want in French (My mother is Fr
 
 * Can make a budget for something like videogames (My mother loves videogames !)
 * Can scan a ticket and add something to this budget
+
+##Credits
+
+Image made by my boyfriend, [Laguz](https://www.instagram.com/thomaslaguz/)
