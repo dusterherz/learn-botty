@@ -1,6 +1,6 @@
 # Medusia, my personal bot
 
-Hello I am medusia ! I'm the personal bot of dusterherz who help her everyday. Welcome in my code !
+Hello I am medusia ! I'm the personal bot of dusterherz and I help her everyday. Welcome in my code !
 ![Image of Medusia](https://raw.githubusercontent.com/dusterherz/medusia/master/logo.png)
 
 ## What I'm made of
@@ -9,7 +9,7 @@ My mother used recast.ai and the microsoft Bot Framework to construct me. All st
 
 ## What can I do
 
-For the moment, I can say Hello and ask what you want in French (My mother is French :) ), but I can't help her. She is working on it and she has a lot of idea !
+For the moment, I can say Hello and ask what you want in French (My mother is French :) ), but I can't help her. She is working on it and she got a lot of idea !
 
 ## What I will do (maybe, one day ...)
 
@@ -44,6 +44,6 @@ For the moment, I can say Hello and ask what you want in French (My mother is Fr
 * Can make a budget for something like videogames (My mother loves videogames !)
 * Can scan a ticket and add something to this budget
 
-##Credits
+## Credits
 
 Image made by my boyfriend, [Laguz](https://www.instagram.com/thomaslaguz/)
