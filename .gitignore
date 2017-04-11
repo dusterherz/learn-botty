@@ -1,5 +1,2 @@
-# Configuration for the bot microsoft connector
-config.js
-
-# All the node module !
-node_modules
+***/*.pyc
+config.py
