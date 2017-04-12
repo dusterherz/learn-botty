@@ -14,4 +14,5 @@ settings.init()
 def root():
   return bot(request)
 
-app.run(port=settings.config['flask']['port'])
+if __name__ == '__main__':
+    app.run(port=settings.config['flask']['port'])
