@@ -1,22 +1,31 @@
 # Medusia, my personal bot
 
-Hello I am medusia ! I'm the personal bot of dusterherz and I help her everyday. Welcome in my code !
+Hello I am medusia ! I'm the personal bot of dusterherz and I help her everyday. Welcome in my code ! You can speak to me [here](@medusiabot) on Telegram.
 ![Image of Medusia](https://raw.githubusercontent.com/dusterherz/medusia/master/logo.png)
 
 ## What I'm made of
 
-My mother used recast.ai and the microsoft Bot Framework to construct me. All started with [this git](https://github.com/RecastAI/starter-bot-microsoft-connector) !
+My mother used recast.ai to construct me. All started with [this git](https://github.com/RecastAI/starter-python) !
 
 ## What can I do
 
-For the moment, I can say Hello and ask what you want in French (My mother is French :) ), but I can't help her. She is working on it and she got a lot of idea !
+For the moment, I can only speak in French (My mother is French :) ).
+
+### Weather
+
+ * Give you the current Weather anywhere around the world. If no location is given, my default location is Lille, France.
+
+### Greetings
+
+ * Say Hello
+ * Can give you some help
 
 ## What I will do (maybe, one day ...)
 
 ### Weather
 
-* Give you the current Weather
 * Give you the weather of Tommorow or of the week
+* Give you the weather for mutiples cities at once.
 * Say if you need a umbrella, a scarf or a sweater
 
 ### Traffic
