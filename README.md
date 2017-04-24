@@ -1,6 +1,6 @@
 # Medusia, my personal bot
 
-Hello I am medusia ! I'm the personal bot of dusterherz and I help her everyday. Welcome in my code ! You can speak to me [here](@medusiabot) on Telegram.
+Hello I am medusia ! I'm the personal bot of dusterherz and I help her everyday. Welcome in my code ! You can speak to me [here](https://t.me/medusiabot) on Telegram.
 
 ![Image of Medusia](https://raw.githubusercontent.com/dusterherz/medusia/master/logo.png)
 
