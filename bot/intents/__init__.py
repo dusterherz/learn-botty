@@ -5,14 +5,15 @@ from .easter_egg import handle as eastereggHandle
 
 
 def handle(response):
-    handle = {
-     'meteo': weatherHandle,
-     'easteregg': eastereggHandle
+    handler = {
+     'Weather': weatherHandle,
+     'Easter Egg': eastereggHandle
     }
-    if response.result.action in handle:
-        answer = handle[response.result.action](response)
+    print(response.result.metadata)
+    if response.result.metadata and result.metadata.intentName in handler:
+        answer = handler[response.result.metadata.intentName](response)
     else:
-        answer = apiaiWebhookSeralizer.Response(response.result.messages.speech,
-                                                response.result.messages.speech,
-                                                response.result.source)
+        answer = apiaiWebhookSerializer.Response(response.result.fulfillment.speech,
+                                                 response.result.fulfillment.speech,
+                                                 response.result.source)
     return answer

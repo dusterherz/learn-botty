@@ -2,7 +2,9 @@ import apiaiWebhookSerializer
 
 
 def handle(response):
-    if response.source == '👢':
+    print('easter egg !')
+    if response.result.resolvedQuery == '👢':
         text = "C'est quand il pleut, les bot"
-
-    return apiaiWebhookSeralizer.Response(text, text, response.result.source)
+    else:
+        text = "🐣"
+    return apiaiWebhookSerializer.Response(text, text, response.result.source)

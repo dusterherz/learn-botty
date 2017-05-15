@@ -10,5 +10,5 @@ from flask import jsonify
 
 
 def bot(request):
-    response = apiaiWebhookSeralizer.Request(request)
+    response = apiaiWebhookSerializer.Request(request)
     return handle(response)

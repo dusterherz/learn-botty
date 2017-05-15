@@ -13,8 +13,9 @@ settings.init()
 
 @app.route("/", methods=['POST'])
 def root():
-    return bot(request)
-
+    response = bot(request.data)
+    print(response.format())
+    return response.format()
 
 if __name__ == '__main__':
     app.run(port=settings.config['flask']['port'])
