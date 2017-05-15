@@ -2,6 +2,7 @@ from datetime import datetime
 import dateutil.parser
 import requests
 import settings
+import apiaiWebhookSerializer
 
 def handle(response):
     lat = '50.6292500'
@@ -19,7 +20,9 @@ def handle(response):
     print(lat + ', lng : ' + lng)
     # Use of DarkSkyApi to get the meteo. Change API if the date is today
     result = requests.get('https://api.darksky.net/forecast/' +
-        settings.config['darkSky']['apiKey'] +
-        '/' + lat + ',' + lng + '?lang=fr').json()
+                          settings.config['darkSky']['apiKey'] +
+                          '/' + lat + ',' + lng + '?lang=fr').json()
 
-    return [result['daily']['data'][0]['summary']]
+    return apiaiWebhookSerializer.Result(result['daily']['data'][0]['summary'],
+                                         result['daily']['data'][0]['summary'],
+                                         response.result.source)

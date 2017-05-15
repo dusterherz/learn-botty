@@ -1,3 +1,8 @@
+import apiaiWebhookSerializer
+
+
 def handle(response):
     if response.source == '👢':
-        return ["C'est quand il pleut, les bot"]
+        text = "C'est quand il pleut, les bot"
+
+    return apiaiWebhookSeralizer.Response(text, text, response.result.source)
