@@ -1,13 +1,18 @@
+import apiaiWebhookSerializer
+
 from .weather import handle as weatherHandle
 from .easter_egg import handle as eastereggHandle
+
 
 def handle(response):
     handle = {
      'meteo': weatherHandle,
      'easteregg': eastereggHandle
     }
-    if response.intents[0].slug in handle:
-        replies = handle[response.intents[0].slug](response)
+    if response.result.action in handle:
+        answer = handle[response.result.action](response)
     else:
-        replies = response.replies
-    return [{'type': 'text', 'content': r} for r in replies]
+        answer = apiaiWebhookSeralizer.Response(response.result.messages.speech,
+                                                response.result.messages.speech,
+                                                response.result.source)
+    return answer
