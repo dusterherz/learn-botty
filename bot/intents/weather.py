@@ -9,24 +9,28 @@ import apiaiWebhookSerializer
 def handle(response):
     lat = '50.6292500'
     lng = '3.0572560'
-    # Take only the last location
-    print(response.result.parameters)
+    # get lat and lng from the city
     if response.result.parameters.city != '':
         geolocator = Nominatim()
         location = geolocator.geocode(response.result.parameters.city)
         lat = str(location.latitude)
         lng = str(location.longitude)
+
+    # get timestamp from the date
     if response.result.parameters.date != '':
         date = parser.parse(response.result.parameters.date)
     else:
         date = datetime.today()
-    date.replace(hour=9, minute=0, second=0, microsecond=0)
-    print(lat + ', lng : ' + lng)
-    # Use of DarkSkyApi to get the meteo. Change API if the date is today
+
+    # Use of DarkSkyApi to get the meteo.
     result = requests.get('https://api.darksky.net/forecast/' +
                           settings.config['darkSky']['apiKey'] +
                           '/' + lat + ',' + lng + '?lang=fr').json()
-
-    return apiaiWebhookSerializer.Response(result['daily']['data'][0]['summary'],
-                                           result['daily']['data'][0]['summary'],
+    message = ("Je n'ai pas trouvé la météo pour cette date. "
+               "La date n'est pas trop loin dans le futur ?")
+    for data in result['daily']['data']:
+        forecast_time = datetime.fromtimestamp(data['time'])
+        if forecast_time.date() == date.date():
+            message = data['summary']
+    return apiaiWebhookSerializer.Response(message, message,
                                            response.result.source)
