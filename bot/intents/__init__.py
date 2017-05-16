@@ -9,9 +9,9 @@ def handle(response):
      'Weather': weatherHandle,
      'Easter Egg': eastereggHandle
     }
-    print(response.result.metadata)
-    if response.result.metadata and result.metadata.intentName in handler:
-        answer = handler[response.result.metadata.intentName](response)
+    metadata = response.result.metadata
+    if metadata and metadata.intentName in handler:
+        answer = handler[metadata.intentName](response)
     else:
         answer = apiaiWebhookSerializer.Response(response.result.fulfillment.speech,
                                                  response.result.fulfillment.speech,
